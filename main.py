@@ -57,7 +57,7 @@ def  is_first_run():
         with open(file_path, "w") as file:
             file.write("Don't Worry, this isn't a virus, just a check to see if it's your first time. :)")
         print(f"{INFO}First Time Detected. Welcome! (This won't appear anymore){Style.RESET_ALL}")
-        webbrowser.open("https://discord.gg/nAa5PyxubF")
+        webbrowser.open("https://facebook.com/dinhducduyyyy")
     if ProgramUsage.vk():
         pass
 
@@ -65,8 +65,6 @@ def  is_first_run():
 def show_credits():
     """Display program credits"""
     print(f"{INFO}{Fore.BLUE}Provided to you by {Fore.CYAN}DD.{Style.RESET_ALL}")
-    print(f"{INFO}{Fore.BLUE}Join Our Discord For More Tools! {Fore.GREEN}"
-          f"https://discord.gg/nAa5PyxubF{Style.RESET_ALL}")
 
 
 def parse_cooldown(text):
@@ -94,7 +92,7 @@ def check_version(current_version):
             u = input(f"{datetime.now().strftime('%H:%M:%S')} {WARNING}{Fore.WHITE}"
                       f"NEW VERSION FOUND. Want to update? (y/n){Style.RESET_ALL}").lower()
             if u == "y":
-                ProgramUsage.download(INFO,WAITING,SUCCESS,WARNING,"https://codeload.github.com/Sneezedip/Tiktok-Booster/zip/refs/heads/main", "./")
+                ProgramUsage.download(INFO,WAITING,SUCCESS,WARNING,"https://codeload.github.com/Dduy07037/TiktokTools/zip/refs/heads/main", "./")
                 sys.exit()
             elif u == "n":
                 return
@@ -302,7 +300,10 @@ class TikTokBooster:
                                         f"\r{WAITING} Waiting {minutes} minute(s) {seconds} second(s) before boosting! "
                                         f"{Style.RESET_ALL}", end='')
                                     time.sleep(1)
-                                    total_seconds -= 1
+                                    if total_seconds < 30:
+                                        total_seconds -= 1
+                                    else:
+                                        total_seconds -= 30
                                 print()
 
                     except Exception as e:
