@@ -64,7 +64,7 @@ def  is_first_run():
 
 def show_credits():
     """Display program credits"""
-    print(f"{INFO}{Fore.BLUE}Provided to you by {Fore.CYAN}Sneezedip.{Style.RESET_ALL}")
+    print(f"{INFO}{Fore.BLUE}Provided to you by {Fore.CYAN}DD.{Style.RESET_ALL}")
     print(f"{INFO}{Fore.BLUE}Join Our Discord For More Tools! {Fore.GREEN}"
           f"https://discord.gg/nAa5PyxubF{Style.RESET_ALL}")
 
